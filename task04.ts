@@ -6,14 +6,19 @@
 
 // TODO BONUS: Rewrite with if
 
-const num = 8;
-if (num%3 === 0 && num%5 === 0) {
+const number = 8;
+
+const FizzBuzz = (number : number) => {
+    if (number%3 === 0 && number%5 === 0) {
     console.log("FizzBuzz");
-} else if (num%3 ===0 && num%5 != 0) {
+} else if (number%3 ===0) {
     console.log("Fizz");
-} else if (num%3 !=0 && num%5 === 0) {
-    console.log("Buzz")
-}else {
-    console.log("Not divisible by 3 or 5")
+} else if (number%5 === 0) {
+    console.log("Buzz");
+} else {
+    console.log("Not divisible by 3 or 5");
 }
-    
+}
+
+FizzBuzz(5)
+
